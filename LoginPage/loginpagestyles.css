@@ -9,6 +9,7 @@
     --secondary-color-dark: #d79447;
     --text-light: #d1d5db;
     --white: #ffffff;
+    --black:#000000 ;
     --max-width: 1200px;
   }
 
@@ -30,7 +31,7 @@ body{
 
 .container{
     background-color: var(--white);
-    border: 5px solid black;
+    border: 5px solid var(--black);
     border-radius: 50px;
     position: relative;
     overflow: hidden;
