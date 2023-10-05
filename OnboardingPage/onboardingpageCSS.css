@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #111317;
+    --primary-color-light: #1f2125;
+    --primary-color-extra-light: #35373b;
+    --secondary-color: #0fedc8dc;
+    --secondary-color-dark: #d79447;
+    --text-light: #d1d5db;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    height: 120px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.logo img {
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.cancel {
+    position: absolute;
+    top: 45px;
+    left: 1400px;
+}
+
+.cancel img {
+    height: 30px;
+}
+
+.bg__blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px var(--secondary-color);
+    z-index: -1;
+}
+
+.header__blur {
+    top: 30rem;
+    left: 80rem;
+}
+
+.intialtext {
+    color: var(--secondary-color);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.intialtext h2 {
+    color: var(--white);
+}
+
+.mainform {
+    color: var(--white);
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+.mainform h2 {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.details p {
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 0.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="radio"] {
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    max-width: 50%;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.radio-group-preference {
+    display: flex;
+    gap: 1rem;
+}
+
+button[type="submit"] {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.right-image {
+    position: absolute;
+    top: 20rem;
+    right: 0.6rem;
+    height: 90%;
+    object-fit: cover;
+}
+
+.footer__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    
+}
+
+.footer__blur {
+    bottom: 0;
+    right: 0;
+}
+
+.footer__col{
+    position: absolute;
+    left: 35rem;
+    top: -10rem;
+}
+
+.footer__logo {
+    max-width: 250px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    left: 7.5rem;
+}
+
+.footer__socials a {
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.footer__socials a:hover {
+    color: var(--white);
+    background-color: var(--secondary-color);
+}
+
+.footer__col>a {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.footer__col>a:hover {
+    color: var(--secondary-color);
+}  
+
+.footer__bar {
+    max-width: var(--max-width);
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: var(--white);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainform {
+    margin-bottom: 18rem;
+}
+
+.preference-container {
+    background-color: var(--primary-color-light);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 2rem;
+    font-size: large;
+    margin-right: 2rem;
+}
+
+.preference-container h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.preference-description {
+    color: var(--white);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.radio-group-preference {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.submitbtn{
+    margin-top: 2.5rem;
+    margin-left: 0.8rem;
+    width: 8rem;
+    transition: all 0.3s linear 0s;
+}
+.submitbtn:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+.navbar {
+height: 80px; 
+}
+
+.logo img {
+height: 60px; 
+top: 10px;
+left: 10px; 
+}
+
+.cancel {
+display: none; 
+}
+
+.intialtext {
+margin-top: 1rem;
+}
+.right-image {
+display: none;
+}
+
+.mainform {
+margin-left: 0.8rem;
+margin-bottom: 10rem; 
+}
+
+.footer__container {
+flex-direction: column; 
+gap: 1rem; 
+}
+
+.footer__col {
+position: relative;
+left: auto;
+top: auto;
+text-align: center; 
+}
+
+.footer__socials {
+justify-content: center; 
+left: auto;
+}
+
+.footer__bar {
+max-width: 100%; 
+margin-top: 1rem; 
+}
+}
