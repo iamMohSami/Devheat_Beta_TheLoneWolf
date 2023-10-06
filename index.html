@@ -22,7 +22,13 @@
       <li class="link"><a href="#Reviews">Reviews</a></li>
       <li class="link"><a href="#Connect">Connect</a></li>
     </ul>
-    <button class="btn">Sign In</button>
+    <button class="btn" onclick="redirectTologinWebsite()" > Sign In</button>
+    <script>
+      function redirectTologinWebsite() {
+          var redirectTo = 'LoginPage/loginpage.html';
+          window.location.href = redirectTo;
+      }
+  </script>
   </nav>
 
 
@@ -38,7 +44,15 @@
         FitPal, you'll embark on a transformative journey of determination, where every workout and meal plan is
         tailored to inspire and challenge you, just like a loyal companion on your path to a fitter you.
       </p>
-      <button class="btn">Get Started</button>
+      <button class="btn" onclick="scrollToSection('JoinUs')">Get Started</button>
+      <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
     </div>
     <div class="header__image">
       <img src="images/header.png" alt="header" />
@@ -164,7 +178,13 @@
             Basic Workouts
           </p>
         </div>
-        <button class="btn price__btn">Get Started</button>
+        <button class="btn price__btn" onclick="redirectToWebsite()">Get Started</button>
+        <script>
+          function redirectToWebsite() {
+              var redirectTo = 'OnboardingPage/onboardingpage.html';
+              window.location.href = redirectTo;
+          }
+      </script>
       </div>
       <div class="price__card">
         <div class="price__card__content">
